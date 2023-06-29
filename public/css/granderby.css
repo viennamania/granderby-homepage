@@ -92,8 +92,8 @@ h2{ font-size: 3.125em; font-family: 'SUIT'; font-weight: 800; margin-bottom: 30
 h3{ font-size: 1.875em; font-family: 'SUIT'; font-weight: 800; margin-bottom: 30px;}
 h4{ font-size: 1.625em; font-family: 'SUIT'; font-weight: 600; line-height:40px;}
 
-.show{display: block; }
-.hide{ display: none;}
+.show{display: block !important; }
+.hide{ display: none !important;}
 
 /* header */
 #header { position: fixed; top: 0; width: 100%; height: 7.5em; z-index: 999;  transition: all 0.2s ease-in-out;}
@@ -229,8 +229,8 @@ h4{ font-size: 1.625em; font-family: 'SUIT'; font-weight: 600; line-height:40px;
 #platform h2{ color: #fff; text-align: center; margin-bottom: 10px;}
 #platform .info{ font-size: 18px;color: #fff;text-align: center;}
 #platform .btn-wrap{ display: flex; justify-content: center; gap:30px ; margin-bottom: 90px;}
-#platform .btn-wrap button{ background-color: #fff; border-radius: 20px; padding: 22px 42px;min-width: 260px;}
-
+#platform .btn-wrap button{ display: inline-flex; align-items: center; background: #fff url(../images/arrow-right.svg) no-repeat 92% center; border-radius: 20px; padding: 22px 70px 22px 42px;min-width: 260px; font-size: 22px; font-weight: 900;}
+#platform .btn-wrap button img{ margin-right: 10px;}
 .nft-slide1, 
 .nft-slide2{ overflow: hidden; margin:40px auto;}
 .nft-slide1 .swiper-wrapper, 
@@ -238,18 +238,18 @@ h4{ font-size: 1.625em; font-family: 'SUIT'; font-weight: 600; line-height:40px;
 .nft-slide1 .swiper-slide img,
 .nft-slide2 .swiper-slide img {display: block; width: 100%; height: auto; border-radius: 1rem;  object-fit: contain;}
 
-#roadmap{ position: relative; margin: 150px 0; height: 630px;  }
+#roadmap{ position: relative; margin: 150px 0; }
 #roadmap h2{  text-align: center; margin-bottom: 20px;}
 .map-wrap{ position: absolute;
    width: 100%; height:410px; 
-   left: 50%; bottom:0; 
+   left: 50%; top: 220px;
    transform: translate( -50%, 0); 
    background: url(../images/bg-track.png) no-repeat center center; 
    background-size: auto 100%;
    z-index: 1;
   }
 .list-map, .list-map-2{ position:relative; top: 75px; display: flex; justify-content: center; width: 1200px;  margin: auto; z-index: 10; }
-.list-map-2{ flex-flow: row-reverse; margin-top: 60px;}
+.list-map-2{ flex-flow: row-reverse; margin-top: 35px;}
 .list-map > li, 
 .list-map-2 > li { text-align: center;}
 .list-map > li:not(:nth-child(3)), 
@@ -465,8 +465,7 @@ footer .footer-wrap p{ text-align: center; color: #fff; font-size:0.875rem; padd
 	
 	#platform{ padding: 5.625em 0 3em;}
 	#platform .btn-wrap{ gap: 10px; padding: 0 1.5em; margin-bottom: 1rem;}
-	#platform .btn-wrap button{ min-width: initial;  padding: 1rem 1.5rem; border-radius: 10px;}
-	#platform .btn-wrap button img{ width: 100%;}
+	#platform .btn-wrap button{ min-width: initial; font-size: 18px;  padding: 1rem 3rem 1rem 1.5rem; border-radius: 10px;}
 	#roadmap{height: initial; padding: 0 1rem; }
 	.map-wrap{ height: auto;}
 	.list-map, .list-map-2{ flex-flow: column; padding: 0 1rem;}
@@ -529,8 +528,4 @@ footer .footer-wrap p{ text-align: center; color: #fff; font-size:0.875rem; padd
 	 .community .community-list > li img{ width: 3em; height: 3em;}
 	 #download .wrap .box-download{ height: 400px;}
 	 #download .wrap .box-download figure{ height: 280px; bottom: 160px; }
-}
-
-@media (max-height: 680px){
-	#howto .text-wrap{  padding-top: 80vh;}
 }

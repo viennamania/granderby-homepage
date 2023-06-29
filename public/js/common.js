@@ -81,9 +81,6 @@ var movSwiper = new Swiper(".news-list", {
   slidesPerView: "3",
   spaceBetween: 30,
   centeredSlides: true,
-  autoplay: {
-    delay: 1500,
-  },
   pagination: {
     el: ".swiper-pagination",
   },
